@@ -4,3 +4,4 @@ httpx
 trio
 argparse
 tqdm
+json
