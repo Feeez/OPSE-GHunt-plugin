@@ -156,12 +156,12 @@ class GHuntTool(Tool):
                         )
                     )
                 except Exception as e:
-                    print("firstname " + str(e))
+                    pass
 
                 try:
                     lastNames.append(OpseStr(data_source="GHunt", str_value=data['names']['PROFILE']['lastName']))
                 except Exception as e:
-                    print("lastname " + str(e))
+                    pass
 
                 try:
                     for middlename in data['names']['PROFILE']['fullname'].split()[1:-1]: # remove first and lastname
@@ -170,7 +170,7 @@ class GHuntTool(Tool):
                             str_value=middlename)
                         )
                 except Exception as e:
-                    print("middlename " + str(e))
+                    pass
                 
                 try:
                     for account in data['inAppReachability']['PROFILE']['apps']:
@@ -180,7 +180,7 @@ class GHuntTool(Tool):
                             login=mail)
                         )
                 except Exception as e:
-                    print("accounts " + str(e))
+                    pass
 
                 # Probable location
                 try:
@@ -194,7 +194,7 @@ class GHuntTool(Tool):
                             country=loc['avg']['country'])
                         )
                 except Exception as e:
-                    print("location " + str(e))
+                    pass
 
             except Exception as e:
                 # Might be an error during the request
