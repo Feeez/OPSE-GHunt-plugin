@@ -1,0 +1,12 @@
+# IDEs and editors
+**/.idea
+**/.vscode
+
+# Environment
+**/.DS_Store
+**/.env
+
+# Cache
+**/__pycache__
+**/config.yml
+
