@@ -27,7 +27,6 @@ import httpx
 
 # Other imports
 import json
-import asyncio
 import trio
 
 
